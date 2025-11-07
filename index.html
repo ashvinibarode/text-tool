@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Tool </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Text Tool</h1>
+
+    <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+
+    <div class="buttons">
+      <button onclick="toUpperCaseText()">UPPERCASE</button>
+      <button onclick="toLowerCaseText()">lowercase</button>
+      <button onclick="capitalizeText()">Capitalize</button>
+      <button onclick="removeSpaces()">Remove Spaces</button>
+      <button onclick="copyText()">Copy Text</button>
+      <button onclick="clearText()">Clear</button>
+    </div>
+
+    <div class="summary">
+      <h3>📊 Text Summary</h3>
+      <p id="wordCount">Words: 0</p>
+      <p id="charCount">Characters: 0</p>
+      <p id="readingTime">Reading Time: 0 sec</p>
+    </div>
+
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
